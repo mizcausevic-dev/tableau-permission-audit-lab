@@ -1,0 +1,57 @@
+{
+  "name": "tableau-permission-audit-lab",
+  "version": "0.1.0",
+  "description": "Operator surface for Tableau permission governance, group sync drift, certification trust, external sharing risk, and audit continuity. Library + CLI.",
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizcausevic-dev/tableau-permission-audit-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mizcausevic-dev/tableau-permission-audit-lab/issues"
+  },
+  "homepage": "https://github.com/mizcausevic-dev/tableau-permission-audit-lab#readme",
+  "keywords": [
+    "tableau",
+    "permissions",
+    "audit",
+    "analytics-governance",
+    "bi-platform",
+    "typescript",
+    "github-pages"
+  ],
+  "bin": {
+    "tableau-permission-audit-lab": "dist/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/app.ts",
+    "demo": "tsx scripts/run_demo.ts",
+    "smoke": "tsx scripts/smoke_check.ts",
+    "prerender": "tsx scripts/prerender.ts",
+    "render:assets": "powershell -ExecutionPolicy Bypass -File .\\scripts\\render_readme_assets.ps1",
+    "verify": "npm run lint && npm run typecheck && npm run coverage && npm run build && npm run demo && npm run smoke"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.13.9",
+    "@types/supertest": "^6.0.3",
+    "@vitest/coverage-v8": "^2.1.9",
+    "eslint": "^9.22.0",
+    "globals": "^16.5.0",
+    "supertest": "^7.1.4",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.46.4",
+    "tsx": "^4.19.3",
+    "vitest": "^2.1.9"
+  }
+}

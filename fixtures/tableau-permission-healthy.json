@@ -1,0 +1,31 @@
+{
+  "snapshots": [
+    {
+      "id": "snap-exec-analytics",
+      "name": "Executive analytics site access review",
+      "scope": "SITE",
+      "scopePath": "/tableau/sites/executive-analytics",
+      "site": "Executive Analytics",
+      "baselineStatus": "CURRENT",
+      "owner": "BI Platform",
+      "reviewCoveragePct": 98,
+      "staleAssets": 0,
+      "externalUsers": 2,
+      "collectedAt": "2026-05-30T13:00:00Z"
+    },
+    {
+      "id": "snap-finance-publishing",
+      "name": "Finance publishing permissions snapshot",
+      "scope": "PROJECT",
+      "scopePath": "/tableau/sites/finance/projects/month-close",
+      "site": "Finance Publishing",
+      "baselineStatus": "CURRENT",
+      "owner": "Reporting Operations",
+      "reviewCoveragePct": 97,
+      "staleAssets": 0,
+      "externalUsers": 0,
+      "collectedAt": "2026-05-30T10:30:00Z"
+    }
+  ],
+  "drifts": []
+}
